@@ -1,0 +1,132 @@
+/* start variables */
+:root {
+  --main-color: ;
+  --back-color: ;
+  --text-color: ;
+}
+/* end variables */
+/* dark mode  */
+.dark-mode {
+  --main-color: ;
+  --back-color: ;
+  --text-color: ;
+}
+/* dark mode  */
+/* start global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+/* End Global Rules */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.gradient {
+  width: 250px;
+  height: 250px;
+  filter: blur(calc(250px / 5));
+  background-image: linear-gradient(#37eba9, #5b37eb);
+  animation: rotate 50s var(--easing) alternate infinite;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  -webkit-animation: rotate 50s cubic-bezier(0.8, 0.2, 0.2, 0.8) alternate
+    infinite;
+  -webkit-filter: blur(calc(250px / 5));
+  position: absolute;
+}
+body {
+  background-color: #222;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+* {
+  transition: all 0.25s ease-out;
+  text-align: center;
+}
+main {
+  z-index: 50;
+  background: linear-gradient(
+    143.98deg,
+    rgba(255, 255, 255, 0.11) 0%,
+    rgba(255, 255, 255, 0.22) 100%
+  );
+  backdrop-filter: blur(25px);
+  border-radius: 30px;
+  width: 500px;
+  margin: 0 20px;
+  padding: 30px;
+}
+* {
+  color: white;
+}
+.location {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+}
+.image img {
+  width: 80px;
+  margin: -5px 0;
+}
+.degree {
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 130px;
+}
+.summery {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
